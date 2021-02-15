@@ -4,18 +4,21 @@ Used in the course DEVOPS FOR DATA SCIENTISTS https://i2ds.org/programa-devops-d
 
 ## Build the image
 
+Build a custom image using the Dockerfile:
 ```
 docker build -t mysql_airports:latest  .
 ```
 
 ## Run MySQL container
 
+Run a mysql container with the new image:
 ```
 docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql_airports:latest
 ```
 
 ## Run PHPMyAdmin container
 
+Run PHP My Admin container and link it to the mysql containe:
 ```
 docker run --name myadmin -d --link some-mysql:db -p 8080:80 -e MYSQL_ROOT_PASSWORD=my-secret-pw phpmyadmin
 ```
