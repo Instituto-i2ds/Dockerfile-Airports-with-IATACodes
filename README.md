@@ -21,5 +21,5 @@ docker run --name myadmin -d --link some-mysql:db -p 8080:80 -e MYSQL_ROOT_PASSW
 ```
 
 Access de UI at: https://localhost:8080
-![PHPMyADMIN](screenshots/screenshot.jpg)
+![PHPMyADMIN](screenshots/screenshot.png)
 
