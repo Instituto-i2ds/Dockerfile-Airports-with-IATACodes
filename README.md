@@ -20,6 +20,7 @@ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql_airpor
 docker run --name myadmin -d --link some-mysql:db -p 8080:80 -e MYSQL_ROOT_PASSWORD=my-secret-pw phpmyadmin
 ```
 
-Access de UI at: https://localhost:8080
+Access de UI at: https://localhost:8080 and navigate to the airports database to see its content
+
 ![PHPMyADMIN](screenshots/screenshot.png)
 
